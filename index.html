@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de cadastro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form>
+        <label for="nome">Nome Completo:</label>
+        <br>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" required><br><br>
+
+        <label for="endereco">Endereço Completo:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" name="cep" required><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#cpf').mask('000.000.000-00', {
+                placeholder: '___.___.___-__'
+            })
+
+            $('#cep').mask('00000-00', {
+                placeholder: '_____-__'
+            })
+
+
+        })
+    </script>
+</body>
+</html>
