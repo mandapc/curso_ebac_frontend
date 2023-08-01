@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>módulo 13</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style> 
+        .carousel-item img {
+            width: 100%;
+            .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="/imgs/carousel-1.png"/>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="/imgs/carousel-2.png"/>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="/imgs/carousel-3.png"/>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>        
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="fs-1 text-center">pura padaria</h1>
+        <div class="row">
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card text-bg-dark">
+                    <img src="/imgs/cardsbg.png" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Encomendas</h4>
+                        <p class="card-text">
+                            receba nossos paes e doces quentinhos no conforto da sua casa
+                        </p>
+                        <a href="#" class="btn btn-outline-dark">></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card text-bg-dark">
+                    <img src="/imgs/cardsbg.png" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Sobre nos</h4>
+                        <p class="card-text">
+                            somos uma padaria independente, conheca nossa historia
+                        </p>
+                        <a href="#" class="btn btn-outline-dark">></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-sm-6">
+                <div class="card text-bg-dark">
+                    <img src="/imgs/cardsbg.png" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Venha Visitar</h4>
+                        <p class="card-text">
+                            reserve um horario para tomar um cafe da manha
+                        </p>
+                        <a href="#" class="btn btn-outline-dark">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>
